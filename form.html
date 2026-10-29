@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de formularios</title>
+</head>
+
+<body>
+    <h2>Formulario Básico</h2>
+    <form action="#" method="post">
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" placeholder="Escribe tu usuario" required> <br><br>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" placeholder="Escribe tu contraseña"><br><br>
+        <input type="submit" value="Iniciar Sesión">
+    </form>
+
+    <h2>Formulario Intermedio</h2>
+
+    <h2>Registro de Nuevo Usuario</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend><b>Datos Personales</b></legend>
+            <label for="nombre">Nombre completo:</label> <br>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Ana Perez Mendez" required><br><br>
+
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required><br><br>
+
+            <label for="fecha">Fecha de nacimiento:</label><br>
+            <input type="date" id="fecha" name="fecha"><br><br>
+
+            <label for="edad">Edad:</label><br>
+            <input type="number" id="edad" name="edad" placeholder="18" min="18" max="99"><br><br>
+        </fieldset> <br>
+        <fieldset>
+            <legend><b>Preferencias</b></legend>
+
+            <label for="pais">País:</label>
+            <select name="pais" id="pais">
+                <option value="">--Selecciona un país---</option>
+                <option value="pe">Perú</option>
+                <option value="es">España</option>
+                <option value="ar">Argentina</option>
+                <option value="co">Colombia</option>
+            </select><br><br>
+
+            <label>Género:</label><br>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label> <br>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Femenino</label> <br>
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de tablas</title>
+</head>
+
+<body>
+    <h2>Tabla básica</h2>
+    <table border="" cellpadding="5" width="25%">
+        <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>Laptop</td>
+            <td>3870</td>
+        </tr>
+        <tr>
+            <td>Mouse</td>
+            <td>75</td>
+        </tr>
+    </table>
+
+    <h2>Tabla intermedia</h2>
+    <table border="" cellpadding="5" width="50%">
+        <thead>
+            <tr>
+                <th>Categoria</th>
+                <th>Producto</th>
+                <th>Stock</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Electrónica</td>
+                <td>Laptop</td>
+                <td align="center">12</td>
+                <td align="right">3800.00</td>
+            </tr>
+            <tr>
+                <td>Mouse</td>
+                <td align="center">50</td>
+                <td align="right">85.00</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Oficina</td>
+                <td>Impresora</td>
+                <td align="center">11</td>
+                <td align="right">800.00</td>
+            </tr>
+            <tr>
+                <td>Boligrafo</td>
+                <td align="center">120</td>
+                <td align="right">1.50</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" align="right">Total:</td>
+                <td align="right"><b>18587.50</b></td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+
+</html>
